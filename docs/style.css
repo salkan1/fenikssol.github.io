@@ -1,4 +1,7 @@
 /* --- GENEL AYARLAR --- */
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; display: block; } /* global kontrol */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -17,7 +20,7 @@ header {
 }
 
 .logo img {
-  height: 80px;
+  height: clamp(48px, 6vw, 72px);   /* çok büyümesin */
 }
 
 .logo h1 {
@@ -36,9 +39,7 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav li {
-  display: inline-block;
-}
+nav li { display: inline-block; }
 
 nav a {
   text-decoration: none;
@@ -47,9 +48,7 @@ nav a {
   transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #fff;
-}
+nav a:hover { color: #fff; }
 
 /* --- HERO BÖLÜMÜ --- */
 .hero {
@@ -63,9 +62,133 @@ nav a:hover {
 }
 
 /* --- ALTTAKİ 5 LOGO SATIRI --- */
-/* Masaüstü: 5 kolon tek sıra, ortalı — kaydırma yok */
-/* Mobil (≤768px): alt alta sıralanır */
+/* Masaüstü: tek sıra 5 logo, küçük boy; kaydırma yok */
+/* Mobil: alt alta geçsin */
 .brands {
   display: flex;
-  justify-content: space-between;   /* 5 logoyu tek satırda yay */
-  align-items: flex-
+  flex-wrap: nowrap;                 /* tek sıra */
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: visible;                 /* kaydırma istemiyoruz */
+}
+
+.brand {
+  flex: 1 1 20%;                     /* 5 eşit kolon */
+  max-width: 20%;
+  min-width: 140px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.brand img {
+  height: clamp(28px, 3.2vw, 40px);  /* LOGO BOYU: küçük ve sınırlı */
+  width: auto;
+  object-fit: contain;
+  margin: 0 auto 6px;
+}
+
+/* %50 küçük metinler (başlık ve alt açıklama) */
+.brand h3 {
+  color: #ffcc00;
+  font-size: 0.55rem;                /* yarı boy civarı */
+  line-height: 1.2;
+  margin: 4px 0 0;
+  letter-spacing: 0.2px;
+}
+
+.brand p {
+  font-size: 0.6rem;
+  line-height: 1.25;
+  color: #ddd;
+  margin: 3px 0 0;
+}
+
+.brand:hover { transform: scale(1.04); }
+
+/* --- FENIKS TANITIM METNİ --- */
+.about-feniks {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 100px 10%;
+}
+
+.about-feniks h2 { font-size: 3rem; margin-bottom: 40px; }
+.about-feniks p  { font-size: 1.5rem; margin-bottom: 40px; }
+.about-feniks h3 { font-size: 2rem; margin: 50px 0 20px; }
+
+.about-feniks ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.about-feniks ul li { margin-bottom: 10px; }
+
+/* --- PROJE BLOKLARI --- */
+.projects {
+  padding: 100px 10%;
+  border-top: 2px solid rgba(255,255,255,0.1);
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 0;
+  gap: 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 80px;
+}
+
+.project.reverse { flex-direction: row-reverse; }
+
+/* PROJE görselleri aşırı büyümesin */
+.project img {
+  width: clamp(160px, 18vw, 260px);  /* üst sınır 260px */
+  border-radius: 10px;
+}
+
+.project-text { width: 65%; max-width: 820px; }
+.project-text h2 { font-size: 2.2rem; margin-bottom: 12px; }
+.project-text h3 { font-size: 1.6rem; margin-bottom: 12px; }
+.project-text p  { font-size: 1.1rem; line-height: 1.7rem; color: #ddd; }
+
+/* --- FOOTER --- */
+footer {
+  background: #000;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* --- MOBİL DÜZEN --- */
+@media (max-width: 768px) {
+  .brands {
+    flex-wrap: wrap;                 /* alt alta */
+    justify-content: center;
+    gap: 10px 12px;
+  }
+  .brand {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .brand img { height: 36px; }       /* mobil daha da küçük */
+  .brand h3 { font-size: 0.62rem; }
+  .brand p  { font-size: 0.64rem; }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+  .project img {
+    width: clamp(140px, 45vw, 200px); /* mobil üst sınır 200px */
+  }
+  .project-text { width: 100%; }
+}
