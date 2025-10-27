@@ -95,11 +95,15 @@ footer { background: #000; padding: 20px; font-size: 0.9em; color: #aaa; }
   color: #ddd;
 }
 
-/* --- 5 ŞİRKET LOGOSUNU %50 KÜÇÜLT --- */
-.brand img {
-  width: 50%;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px auto;
+/* --- ALTTAKİ 5 KUTUYU %50 KÜÇÜLT --- */
+.brand {
+  transform: scale(0.5);
+  transform-origin: center;
+}
+
+/* Kutular küçülünce aralarındaki boşluğu dengelemek için */
+.brands {
+  gap: 10px;
+  padding: 20px 0;
 }
 
