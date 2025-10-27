@@ -193,3 +193,13 @@ footer {
   }
   .project-text { width: 100%; }
 }
+
+header {
+  text-align: center;   /* tüm header içeriğini ortalar */
+}
+
+.logo img {
+  margin: 0 auto;       /* garanti olsun diye */
+  display: block;       /* img’yi blok yapar */
+}
+
