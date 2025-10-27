@@ -14,32 +14,56 @@ nav a:hover { color: #fff; }
 .brand h3 { color: #ffcc00; margin: 10px 0 5px; }
 .brand p { font-size: 0.9em; color: #ccc; }
 footer { background: #000; padding: 20px; font-size: 0.9em; color: #aaa; }
+
+/* --- FENIKS TANITIM METNİ --- */
 .about-feniks {
-  background: url('background.jpg') no-repeat center center/cover;
+  background: #111; /* koyu arka plan */
   color: white;
-  padding: 80px 10%;
+  text-align: center;
+  padding: 100px 10%;
 }
 
 .about-feniks h2 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* 2 kat büyütme */
+  margin-bottom: 40px;
+}
+
+.about-feniks p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.about-feniks h3 {
+  font-size: 2rem;
+  margin-top: 50px;  /* "Ana Hizmetlerimiz" üstü boşluk */
   margin-bottom: 20px;
 }
 
 .about-feniks ul {
-  list-style: disc;
-  margin-left: 30px;
+  list-style: none;
+  padding: 0;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
+.about-feniks ul li {
+  margin-bottom: 10px;
+}
+
+/* --- PROJE BLOKLARI --- */
 .projects {
-  padding: 80px 10%;
+  padding: 100px 10%;
+  border-top: 2px solid rgba(255,255,255,0.1);
 }
 
 .project {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin: 80px 0;
   gap: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.1); /* aralarına ince çizgi */
+  padding-bottom: 80px;
 }
 
 .project.reverse {
@@ -47,20 +71,26 @@ footer { background: #000; padding: 20px; font-size: 0.9em; color: #aaa; }
 }
 
 .project img {
-  width: 48%;
-  border-radius: 8px;
+  width: 25%; /* %75 küçültülmüş hali */
+  border-radius: 10px;
 }
 
 .project-text {
-  width: 48%;
+  width: 65%;
 }
 
 .project-text h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin-bottom: 15px;
 }
 
 .project-text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.project-text p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #ddd;
 }
