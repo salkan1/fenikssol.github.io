@@ -14,3 +14,53 @@ nav a:hover { color: #fff; }
 .brand h3 { color: #ffcc00; margin: 10px 0 5px; }
 .brand p { font-size: 0.9em; color: #ccc; }
 footer { background: #000; padding: 20px; font-size: 0.9em; color: #aaa; }
+.about-feniks {
+  background: url('background.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 80px 10%;
+}
+
+.about-feniks h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-feniks ul {
+  list-style: disc;
+  margin-left: 30px;
+}
+
+.projects {
+  padding: 80px 10%;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+.project img {
+  width: 48%;
+  border-radius: 8px;
+}
+
+.project-text {
+  width: 48%;
+}
+
+.project-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.project-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
