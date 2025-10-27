@@ -63,33 +63,36 @@ nav a:hover {
 }
 
 /* --- ALTTAKİ 5 LOGO SATIRI --- */
+/* Tek sıra, sıkı aralık, mobilde yatay kaydırma */
 .brands {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: nowrap;               /* tek sıra */
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  overflow-x: auto;
-  padding: 50px 0;
+  gap: clamp(8px, 2vw, 16px);      /* aralar çok açılmasın */
+  padding: 24px 8px;               /* daha kompakt */
+  overflow-x: auto;                /* dar ekranda scroll */
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .brand {
-  flex: 0 0 auto;
+  flex: 0 0 auto;                  /* sabit genişlikli öğe */
   text-align: center;
   transition: transform 0.3s ease;
 }
 
 .brand img {
-  width: 120px;
-  height: auto;
+  height: 56px;                    /* yükseklik sabit, oran korunur */
+  width: auto;
   object-fit: contain;
+  display: block;
 }
 
 .brand h3 {
   color: #ffcc00;
-  font-size: 1.2rem;
-  margin-top: 10px;
+  font-size: 1.05rem;
+  margin-top: 8px;
 }
 
 .brand:hover {
@@ -182,4 +185,13 @@ footer {
   padding: 20px;
   font-size: 0.9em;
   color: #aaa;
+}
+
+/* --- (İsteğe bağlı) Scrollbar’ı incelt --- */
+.brands::-webkit-scrollbar {
+  height: 6px;
+}
+.brands::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
 }
