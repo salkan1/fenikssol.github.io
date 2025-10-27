@@ -66,18 +66,18 @@ nav a:hover { color: #fff; }
 /* Mobil: alt alta geçsin */
 .brands {
   display: flex;
-  flex-wrap: nowrap;                 /* tek sıra */
+  flex-wrap: nowrap;        /* tek sıra – logos sayısı ne olursa olsun yana kayma yok */
   justify-content: space-between;
   align-items: center;
   gap: 12px;
   padding: 20px 12px;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: visible;                 /* kaydırma istemiyoruz */
+  overflow: hidden;         /* yatay kaydırma olmasın */
 }
 
 .brand {
-  flex: 1 1 20%;                     /* 5 eşit kolon */
+  flex: 1 1 20%;            /* 5 eşit sütun */
   max-width: 20%;
   min-width: 140px;
   text-align: center;
@@ -85,8 +85,9 @@ nav a:hover { color: #fff; }
 }
 
 .brand img {
-  height: clamp(28px, 3.2vw, 40px);  /* LOGO BOYU: küçük ve sınırlı */
+  height: clamp(24px, 3vw, 40px); /* logoların yüksekliği küçük kalsın */
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   margin: 0 auto 6px;
 }
@@ -94,7 +95,7 @@ nav a:hover { color: #fff; }
 /* %50 küçük metinler (başlık ve alt açıklama) */
 .brand h3 {
   color: #ffcc00;
-  font-size: 0.55rem;                /* yarı boy civarı */
+  font-size: 0.55rem;       
   line-height: 1.2;
   margin: 4px 0 0;
   letter-spacing: 0.2px;
@@ -170,7 +171,7 @@ footer {
 /* --- MOBİL DÜZEN --- */
 @media (max-width: 768px) {
   .brands {
-    flex-wrap: wrap;                 /* alt alta */
+    flex-wrap: wrap;        /* mobilde logolar alt alta dizilsin */
     justify-content: center;
     gap: 10px 12px;
   }
@@ -178,7 +179,7 @@ footer {
     flex: 1 1 100%;
     max-width: 100%;
   }
-  .brand img { height: 36px; }       /* mobil daha da küçük */
+  .brand img { height: 36px; }      /* mobilde logolar biraz daha büyük veya küçük ayarlayabilirsin */
   .brand h3 { font-size: 0.62rem; }
   .brand p  { font-size: 0.64rem; }
 
