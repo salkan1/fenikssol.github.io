@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim ve Danışmanlık | Feniks Solution</title>
+    <link rel="stylesheet" href="../style.css"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .service-card { transition: transform 0.3s; border: none; shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .service-card:hover { transform: translateY(-10px); }
+        .feature-icon { color: #007bff; font-size: 1.5rem; margin-right: 10px; }
+        .header-bg { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../dan1.png'); background-size: cover; color: white; padding: 100px 0; }
+    </style>
+</head>
+<body>
+
+    <header class="header-bg text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Eğitim ve Danışmanlık</h1>
+            <p class="lead">Mühendislik Disipliniyle Süreçlerinizi Standartlaştırın, Verimliliğinizi Artırın.</p>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold text-primary">Yönetim Danışmanlığı: Sistemin Gücü</h2>
+                [cite_start]<p>İşletmenizin kişilere bağımlı yapısından kurtulup, süreçlere bağlı kurumsal bir mekanizmaya dönüşmesini sağlıyoruz[cite: 44, 46]. [cite_start]Patronun üzerindeki operasyonel yükü hafifleten sürdürülebilir sistemler kuruyoruz[cite: 47].</p>
+                <ul class="list-unstyled">
+                    [cite_start]<li><i class="feature-icon">✔</i> Müşteri şikayetleri ve süreç yönetimi[cite: 70].</li>
+                    [cite_start]<li><i class="feature-icon">✔</i> Üretim içi proses verimliliği ve optimizasyon[cite: 55, 58].</li>
+                    [cite_start]<li><i class="feature-icon">✔</i> Organizasyonel yapı ve yetki matrisleri[cite: 44, 46].</li>
+                    [cite_start]<li><i class="feature-icon">✔</i> Yalın Üretim ve 6 Sigma proje yönetimi[cite: 13, 15, 68].</li>
+                </ul>
+                [cite_start]<div class="alert alert-info"><strong>Ne zaman ihtiyaç duyulur?</strong> İşler sadece yönetici sahadayken yürüyor ve kalite problemleri "normalleşmiş" ise profesyonel müdahale zamanı gelmiştir[cite: 45].</div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="../dan1.png" alt="Yönetim Danışmanlığı" class="img-fluid rounded shadow service-card">
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row align-items-center mb-5 flex-lg-row-reverse">
+            <div class="col-lg-6">
+                <h2 class="fw-bold text-primary">Denetim ve Belgelendirme</h2>
+                [cite_start]<p>ISO belgelerini sadece dosya üzerinde değil, sahada maliyeti düşüren ve enerji tasarrufu sağlayan birer yönetim aracı olarak kuruyoruz[cite: 51, 53].</p>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            [cite_start]<li><strong>ISO 9001</strong> Kalite Yönetimi[cite: 7, 50].</li>
+                            [cite_start]<li><strong>ISO 45001</strong> İş Sağlığı ve Güvenliği[cite: 7, 50].</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled">
+                            [cite_start]<li><strong>ISO 14001</strong> Çevre Yönetimi[cite: 128].</li>
+                            [cite_start]<li><strong>ISO 50001</strong> Enerji Yönetimi[cite: 7, 54, 129].</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="../dan2.png" alt="ISO Denetim ve Belgelendirme" class="img-fluid rounded shadow service-card">
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2 class="fw-bold text-primary">Bilgiyle Dönüşen İş Gücü</h2>
+                [cite_start]<p>Akademik teoriler yerine tamamen sahadan örneklerle, personelin israfı fark etmesini ve problemi kökten çözmesini hedefliyoruz[cite: 91, 95].</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush small">
+                            [cite_start]<li class="list-group-item">6 Sigma Temel Eğitimleri [cite: 89, 90]</li>
+                            [cite_start]<li>Yalın Üretime Giriş [cite: 92, 94]</li>
+                            [cite_start]<li class="list-group-item">Kaizen ve 7 Temel İsraf [cite: 96, 98]</li>
+                            [cite_start]<li class="list-group-item">Değer Akış Haritalandırma [cite: 107, 111]</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group list-group-flush small">
+                            [cite_start]<li class="list-group-item">Geometrik Toleranslandırma [cite: 113, 115]</li>
+                            [cite_start]<li class="list-group-item">FMEA (Tasarım ve Proses) [cite: 116, 118]</li>
+                            [cite_start]<li class="list-group-item">Cpk, SPC ve 5S Eğitimleri [cite: 11, 15]</li>
+                            <li class="list-group-item">SMED (Hızlı Model Değişimi)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="../dan3.png" alt="Teknik Eğitimler" class="img-fluid rounded shadow service-card">
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-dark text-white py-5 text-center">
+        <div class="container">
+            <h3>İşletmenizi bir üst seviyeye taşımaya hazır mısınız?</h3>
+            <p>Daha detaylı bilgi ve ücretsiz ön analiz randevusu için bizimle iletişime geçebilirsiniz.</p>
+            <a href="mailto:info@fenikssol.com" class="btn btn-primary btn-lg mt-3">İletişime Geçin</a>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-light">
+        <p>&copy; 2026 Feniks Solution - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
