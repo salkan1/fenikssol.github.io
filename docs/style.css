@@ -210,7 +210,10 @@ header {
 .left-page .container {
   max-width: 900px;
   margin: 0 auto;
+  padding-left: 20px;   /* soldan boşluk */
+  padding-right: 20px;  /* sağdan da denge */
 }
+
 
 .left-page p {
   line-height: 1.7;
