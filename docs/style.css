@@ -203,18 +203,6 @@ header {
   display: block;       /* img’yi blok yapar */
 }
 
-#about {
-  text-align: left !important;
-}
-
-#about h2,
-#about h3,
-#about p,
-#about ul,
-#about li {
-  text-align: left !important;
-}
-
 .left-page {
   text-align: left;
 }
@@ -222,4 +210,9 @@ header {
 .left-page .container {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.left-page p {
+  line-height: 1.7;
+  margin-bottom: 18px;
 }
