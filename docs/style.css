@@ -214,3 +214,12 @@ header {
 #about li {
   text-align: left !important;
 }
+
+.left-page {
+  text-align: left;
+}
+
+.left-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
