@@ -203,3 +203,14 @@ header {
   display: block;       /* img’yi blok yapar */
 }
 
+#about {
+  text-align: left !important;
+}
+
+#about h2,
+#about h3,
+#about p,
+#about ul,
+#about li {
+  text-align: left !important;
+}
