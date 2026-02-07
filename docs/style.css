@@ -219,3 +219,8 @@ header {
   line-height: 1.7;
   margin-bottom: 18px;
 }
+
+.left-page p {
+  margin-bottom: 24px;   /* paragraf arası boşluk */
+  line-height: 1.7;      /* satır arası rahat okuma */
+}
